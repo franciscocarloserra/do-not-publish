@@ -1,0 +1,1 @@
+U.add('gl','blur',{sev:.2,apply:c=>{c.w.style.animation='gblur '+(3-c.lvl*2)+'s infinite';if(!document.getElementById('gbk')){const s=document.createElement('style');s.id='gbk';s.textContent='@keyframes gblur{0%,90%{filter:none}95%{filter:blur(3px)}}';document.head.append(s)}}});

@@ -1,0 +1,1 @@
+U.add('gl','idleinvert',{sev:2.48,ax:{v:.6},new:'the whole page inverts itself when you stop moving the pointer',apply:c=>{let t;const s=()=>{c.w.style.filter='';clearTimeout(t);t=setTimeout(()=>c.w.style.filter='invert(1)',U.cfg.idle_ms)};s();U.onoff(()=>clearTimeout(t));U.on(document,'mousemove',s)}});

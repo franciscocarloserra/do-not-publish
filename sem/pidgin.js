@@ -1,0 +1,1 @@
+U.add('sem','pidgin',{sev:1.6,words:{B:['Door','Stay','Again','You','Sorry'],L:['Door','Room','You','Light'],X:['Door you.','Room again. Door.','Stay. Stay you.','Light. Sorry.','You door.'],E:['🚪','💡']},titles:['Door','Room','Stay','You'],mutate:(t,r)=>r<.5?t.replace(/\b\w{4,}\b/g,x=>(x.length+Math.floor(r*10))%2?'door':'you'):t});

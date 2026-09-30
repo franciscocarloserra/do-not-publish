@@ -1,0 +1,1 @@
+U.add('arch','notfound',{sev:0.15,titles:["The page you want is behind the door at the end of the corridor",'404: Page found','410: Gone (still here)','200: Nothing','302: Moved here'],build:c=>'<p style="font-size:90px;margin:0;font-weight:900">'+c.pick(['404','410','200','302','∞'],c.r(4))+'</p><p>'+c.word('X',c.r(5))+'</p>'});

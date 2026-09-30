@@ -1,0 +1,1 @@
+U.add('aes','raw',{sev:0,name:'RAW',css:`&{background:#fff;font:16px Helvetica,Arial,sans-serif}& .win{border:8px solid #000;padding:18px}& h1{font-size:64px;line-height:.85;text-transform:uppercase;letter-spacing:-4px;color:#f00}& button{background:#000;color:#fff;border:0;padding:14px 20px;font-weight:900;text-transform:uppercase}`});

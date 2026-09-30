@@ -1,0 +1,1 @@
+U.add('gl','scrollcreep',{sev:2.76,ax:{v:.7},new:'the scroll position creeps downward by itself, one pixel at a time',apply:c=>{c.w.style.paddingBottom='120vh';U.live(c,()=>scrollBy(0,U.cfg.creep_px),U.cfg.creep_ms)}});

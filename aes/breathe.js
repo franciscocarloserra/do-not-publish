@@ -1,0 +1,1 @@
+U.add('aes','breathe',{sev:2.2,ax:{v:.5},new:'the whole page breathes: scale and brightness keyframes on a 5 s cycle',name:'BREATHING',css:`&{background:#200;color:#fdd;font:16px Georgia,serif;animation:br 5s ease-in-out infinite}@keyframes br{50%{filter:brightness(.55)}}& button{background:#411;color:#fdd;border:1px solid #a66}`});

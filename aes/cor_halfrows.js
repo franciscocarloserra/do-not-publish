@@ -1,0 +1,1 @@
+U.add('aes','cor_halfrows',{sev:4.08,name:"HALFROWS",ax:{v:0.98,c:0.77},new:"rows and paragraphs clip to a line and a half: half-rendered content",css:`&{background:#eee;color:#000;font:15px Arial}& .win{background:#fff;padding:12px}& .row{max-height:1.3em;overflow:hidden}& p{max-height:2.4em;overflow:hidden}& button{background:#000;color:#fff;border:2px solid #fff}`});

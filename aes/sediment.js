@@ -1,0 +1,1 @@
+U.add('aes','sediment',{sev:2.05,name:'SEDIMENT',css:`&{background:#c8c0a8;color:#2a2418;font:14px Georgia,serif}& .win{background:#ddd5bd;padding:18px;box-shadow:10px 10px 0 #0003,20px 20px 0 #0002,30px 30px 0 #0001,-12px 18px 0 #0002}& .row:nth-child(2n){}& .row:nth-child(3n){opacity:.7}& .row:nth-child(5n){opacity:.4}& button{background:#ddd5bd;border:1px solid #2a2418}`});

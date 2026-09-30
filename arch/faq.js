@@ -1,0 +1,1 @@
+U.add('arch','faq',{sev:.1,titles:['Frequently Asked Questions (unanswered)','FAQ: Frequently Avoided Questions','Help → Help','Questions nobody asked'],build:c=>[...Array(5)].map((_,i)=>'<p><b>Q'+(i+1)+'. '+c.word('L',c.r(20+i))+'?</b><br>A: '+c.word('X',c.r(30+i))+'</p>').join('')});

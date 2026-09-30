@@ -1,0 +1,1 @@
+U.add('aes','win95',{sev:0,name:'WINDOWS 95',css:`&{background:#008080;font:14px "MS Sans Serif",Tahoma,sans-serif}& .win{background:#c0c0c0;border:3px outset #fff;padding:0 12px 12px}& h1{background:linear-gradient(90deg,#000080,#1084d0);color:#fff;font-size:15px;margin:0 -12px 10px;padding:4px 8px}& button{background:#c0c0c0;border:3px outset #fff;padding:4px 16px}`});

@@ -1,0 +1,1 @@
+U.add('gl','bitrot',{sev:2.2,ax:{v:.5},new:'characters of the page decay into block glyphs continuously, a little each second',apply:c=>{const P=[...c.w.querySelectorAll('p,label,b')].filter(e=>!e.children.length);U.live(c,()=>P.forEach(e=>{const s=e.textContent;if(s)e.textContent=s.replace(/[^\s█]/g,x=>Math.random()<U.cfg.rot_rate?'█':x)}),U.cfg.rot_ms)}});

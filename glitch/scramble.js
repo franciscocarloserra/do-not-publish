@@ -1,0 +1,1 @@
+U.add('gl','scramble',{sev:.4,apply:c=>c.w.querySelectorAll('p,label,h1').forEach(e=>e.addEventListener('mouseenter',()=>{e.textContent=e.textContent.split(' ').sort(()=>Math.random()-.5).join(' ')}))});

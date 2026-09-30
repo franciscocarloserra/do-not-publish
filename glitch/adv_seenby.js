@@ -1,0 +1,1 @@
+U.add('gl','adv_seenby',{sev:6.44,ax:{x:0.735,n:0.974,v:0.996},new:'a seen-by list before the exits: 46 numbers and then the visitor',apply:c=>{const e=U.tag('div','font:10px Courier New,monospace;opacity:.55;margin:10px 0','seen by: '+[...Array(46)].map((_,i)=>i+1).join(' ')+' you');const x=c.w.querySelector('.exits');x&&x.before?x.before(e):c.w.append(e)}});

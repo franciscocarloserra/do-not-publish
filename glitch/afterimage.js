@@ -1,0 +1,1 @@
+U.add('gl','afterimage',{sev:2.15,apply:c=>{c.w.style.transition='text-shadow 20s';c.w.style.textShadow='0 0 0 #fff0';requestAnimationFrame(()=>requestAnimationFrame(()=>c.w.style.textShadow='.4em .1em 0 #f006,-.4em -.1em 0 #0ff6,.9em .3em 0 #fff3,-1.2em -.3em 0 #fff2'))}});

@@ -1,0 +1,1 @@
+U.add('gl','adv_lineage',{sev:4.07,ax:{x:0.143,n:0.914,v:0.987},new:'each paragraph cites its source file in the training set, with the dataset name half redacted',apply:c=>c.w.querySelectorAll('p:not(.truth)').forEach((e,i)=>{if(e.children&&e.children.length)return;e.textContent+=` (src: waiting_▒▒▒▒▒_v3/${U.hx(Math.floor(c.r(210+i)*4294967296)).padStart(8,'0')}.html)`})});

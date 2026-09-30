@@ -1,0 +1,1 @@
+U.add('gl','eyeclose',{sev:1.75,apply:c=>{const e=document.createElement('div');Object.assign(e.style,{position:'fixed',inset:0,background:'#000',opacity:0,pointerEvents:'none',zIndex:5,transition:'opacity 40s linear'});c.w.append(e);requestAnimationFrame(()=>requestAnimationFrame(()=>e.style.opacity=.85))}});

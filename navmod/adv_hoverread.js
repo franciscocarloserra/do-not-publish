@@ -1,0 +1,2 @@
+U.add('nav','adv_hoverread',{sev:4.32,ax:{x:0.204,n:0.92,v:0.988},desc:'each exit reads you its consequence',new:'hovering or focusing an exit prints its consequence in a fixed line under the exits',apply:c=>{const e=U.tag('p','min-height:1.4em;font:12px Courier New,monospace;opacity:.75;margin:6px 0 0');e.className='truth';const x=c.w.querySelector('.exits');x&&x.after?x.after(e):c.w.append(e);
+ c.w.querySelectorAll('button[data-i]').forEach(b=>{const f=()=>e.textContent=b.title||'';U.on(b,'mouseenter',f);U.on(b,'focus',f)})}});

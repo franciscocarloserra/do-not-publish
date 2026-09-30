@@ -1,0 +1,1 @@
+U.add('aes','negative',{sev:1.4,name:'NEGATIVE',css:`&{background:#fff;color:#000;font:15px Georgia,serif}& .win{filter:invert(1) hue-rotate(180deg) contrast(1.6);background:#ddd;padding:16px}& h1{font-size:30px}& button{background:#fff;border:2px solid #000}`});

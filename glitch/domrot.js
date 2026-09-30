@@ -1,0 +1,1 @@
+U.add('gl','domrot',{sev:3.04,ax:{v:.8},new:'elements are deleted from the page one by one until only the title and the exits are left',apply:c=>{U.live(c,()=>{const d=[...c.w.children].filter(e=>e.tagName!='H1'&&!e.classList.contains('exits'));if(d.length)d[Math.floor(Math.random()*d.length)].remove()},U.cfg.domrot_ms)}});

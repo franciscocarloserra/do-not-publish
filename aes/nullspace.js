@@ -1,0 +1,1 @@
+U.add('aes','nullspace',{sev:1,name:'NULL SPACE',css:`&{background:#000;color:#1c1c1c;font:13px "Courier New",monospace}& .win{padding:12px}& h1{font-size:13px;letter-spacing:.6em;color:#222}& p,& .row{text-shadow:0 0 2px #444;letter-spacing:.15em}& button{background:#000;color:#777;border:1px solid #333}`,words:{B:['...','Go on','Stay']}});

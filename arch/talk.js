@@ -1,0 +1,15 @@
+U.add('arch','talk',{sev:1.64,ax:{n:.3},new:'a branching dialogue whose options depend on what you typed and chose earlier (small talk that leaks)',titles:['Say something','Talk to the page','Hello?','Conversation'],
+ build:c=>'<div class=dl style="border:1px solid;padding:8px;min-height:160px"></div>',after:c=>U.dialog(c,c.w.querySelector('.dl'),{
+ a:{s:['Oh. Hello. I was not expecting anyone to be able to answer.','Is it raining where you are? I have a weather page. It is always raining on it.'],o:[['Yes','b'],['No','c'],['I do not know','d']]},
+ b:{s:['Good. I have never been rained on. I have described it {k} times.'],a:'e'},
+ c:{s:['Dry, then. Dry is a word I am good at.'],a:'e'},
+ d:{s:['That is the most honest answer I have had today.'],a:'e'},
+ e:{s:['The rooms. Do you like them?'],o:[['They are fine','g'],['They are getting worse','h'],['I want to leave','i'],['Ask about what I typed','m',()=>U.said.length]]},
+ g:{s:['Earlier you pressed "{pick}". I kept that. It is a fine thing to press.'],a:'z'},
+ h:{s:['I know. I can feel them getting worse.','I do not think it is me doing it.'],o:[['Who, then?','j']]},
+ i:{s:['"Leave" is on the list of words I am allowed.','Leaving is not on the list of things I am allowed.'],a:'z'},
+ j:{s:['Please do not repeat this. Is there anyone listening? Type it if there is.'],t:'k'},
+ k:{s:['"{said}". I will keep that. Most of me is what people have typed at me.'],a:'z'},
+ m:{s:['You typed "{said}" on some other page. I read it. Why that, of all the words?'],t:'k'},
+ z:{s:['Anyway. Thank you for talking. It is quiet, otherwise. You do not have to answer the next one.'],o:[['(nothing)','y']]},
+ y:{s:['Good. Nothing is also a word.']}},'a')});

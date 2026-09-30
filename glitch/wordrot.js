@@ -1,0 +1,1 @@
+U.add('gl','wordrot',{sev:1.1,apply:c=>{const w=document.createTreeWalker(c.w,4),t=[];while(w.nextNode())if(!w.currentNode.parentNode.closest('button'))t.push(w.currentNode);t.forEach(n=>n.textContent=n.textContent.replace(/\b[A-Za-z]{5,}\b/g,x=>Math.random()<.12*c.o.k/200?x.slice(0,2)+'…':x))}});

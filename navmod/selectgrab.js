@@ -1,0 +1,1 @@
+U.add('nav','selectgrab',{sev:2.69,ax:{n:.5,v:.85},new:'copying puts the AI\'s words on your clipboard instead of your selection',desc:'what you copy is not what you select',apply:c=>U.on(document,'copy',e=>{try{e.clipboardData.setData('text/plain',U.fill(U.gen(c.o.k,j=>Math.random())+' {you}.',c));e.preventDefault()}catch(x){}})});

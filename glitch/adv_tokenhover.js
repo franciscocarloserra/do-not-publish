@@ -1,0 +1,1 @@
+U.add('gl','adv_tokenhover',{sev:6.85,ax:{x:0.837,n:0.984,v:0.998},new:'hovering a paragraph reveals its token ids in a tooltip',apply:c=>U.on(c.w,'mouseover',e=>{const p=e.target&&e.target.closest&&e.target.closest('p');if(!p||p.title)return;p.title='['+p.textContent.split(/\s+/).slice(0,U.cfg.adv.tok_n).map(w=>Math.floor(U.hs(w)*50257)).join(' ')+' ...]'})});

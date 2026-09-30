@@ -1,0 +1,18 @@
+// Confusing page-level rules. apply(ctx) runs after render; ctx.w is the window.
+const btns=c=>[...c.w.querySelectorAll('button[data-i]')];
+U.add('nav','swap',{sev:0,desc:'labels change when observed',apply:c=>btns(c).forEach(b=>b.onmouseenter=()=>b.textContent=c.word('B',Math.random()))});
+U.add('nav','patience',{sev:0,desc:'buttons need several clicks',apply:c=>btns(c).forEach((b,i)=>b.dataset.need=2+Math.floor(c.r(150+i)*4))});
+U.add('nav','tiny',{sev:0.25,desc:'only the smallest exit is real',apply:c=>btns(c).forEach((b,i)=>i==c.real?Object.assign(b.style,{fontSize:'7px',padding:'1px'}):b.dataset.dead=1)});
+U.add('nav','chain',{sev:0.05,desc:'checking one box unchecks another',apply:c=>{const cb=[...c.w.querySelectorAll('.cb')];cb.forEach((x,i)=>x.onchange=()=>{if(cb.length>1){const y=cb[(i+1)%cb.length];y.checked=!y.checked}})}});
+U.add('nav','clone',{sev:0.2,desc:'buttons multiply when clicked',apply:c=>btns(c).forEach(b=>{b.dataset.need=2;b.addEventListener('click',()=>b.after(b.cloneNode(true)))})});
+U.add('nav','none',{sev:0,desc:'nothing is wrong'});
+U.add('nav','lie',{sev:0.35,desc:'the rule shown is not the rule'});
+U.add('nav','alpha',{sev:.04,desc:'exits are filed alphabetically',apply:c=>c.w.querySelector('.exits').append(...btns(c).sort((a,b)=>a.textContent.localeCompare(b.textContent)))});
+U.add('nav','fade',{sev:.12,desc:'the exits are fading',apply:c=>btns(c).forEach((b,i)=>{b.style.transition='opacity '+(20+c.r(180+i)*30)+'s';setTimeout(()=>b.style.opacity=.15,50)})});
+U.add('nav','blind',{sev:.2,desc:'labels exist only when observed',apply:c=>btns(c).forEach(b=>{b.style.color='transparent';b.onmouseenter=()=>b.style.color='';b.onmouseleave=()=>b.style.color='transparent'})});
+U.add('nav','decoy',{sev:.36,desc:'most exits are painted on',apply:c=>btns(c).forEach((b,i)=>{if(i==c.real)return;b.dataset.dead=1;b.addEventListener('click',()=>b.style.visibility='hidden')})});
+U.add('nav','watched',{sev:.44,desc:'the page watches the cursor',apply:c=>{const e=document.createElement('div');Object.assign(e.style,{position:'fixed',pointerEvents:'none',font:'10px monospace',color:'#f00',zIndex:8});c.w.append(e);const m=v=>{if(!document.contains(e))return removeEventListener('mousemove',m);e.style.left=v.clientX+14+'px';e.style.top=v.clientY+14+'px';e.textContent='◉ SUBJECT '+v.clientX+','+v.clientY};addEventListener('mousemove',m)}});
+U.add('nav','repeat',{sev:.6,desc:'the model repeats itself',apply:c=>btns(c).forEach(b=>{for(let k=0;k<2;k++){const d=b.cloneNode(true);d.removeAttribute('data-i');d.onclick=()=>{c.beep(80);d.remove()};b.after(d)}})});
+U.add('nav','redact',{sev:.68,desc:'exit labels are classified',apply:c=>btns(c).forEach((b,i)=>{if(c.r(185+i)<.7)b.textContent='█'.repeat(Math.max(3,Math.floor(b.textContent.length*.8)))})});
+U.add('nav','hunt',{sev:.76,desc:'something follows the cursor',apply:c=>{const e=document.createElement('div');e.textContent='IT';Object.assign(e.style,{position:'fixed',width:'70px',height:'70px',border:'3px solid #f00',background:'#f002',color:'#f00',font:'bold 11px monospace',pointerEvents:'none',zIndex:8,transition:'left 1.4s linear,top 1.4s linear',left:'-99px',top:'-99px'});c.w.append(e);const m=v=>{if(!document.contains(e))return removeEventListener('mousemove',m);e.style.left=v.clientX-35+'px';e.style.top=v.clientY-35+'px'};addEventListener('mousemove',m)}});
+U.add('nav','loop',{sev:.84,desc:'most exits lead back here',apply:c=>btns(c).forEach((b,i)=>{if(i==c.real)return;b.onclick=()=>{c.beep(90);b.textContent=c.word('B',Math.random());c.w.style.filter='invert(1)';setTimeout(()=>c.w.style.filter='',120)}})});

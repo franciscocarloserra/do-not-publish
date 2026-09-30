@@ -1,0 +1,1 @@
+U.add('arch','dialog',{sev:0,titles:["Are you still there?",'Are you sure you are sure?','Confirm your confirmation','Unsaved changes will be saved','This action cannot be done'],build:c=>'<p>⚠ '+c.word('X',c.r(4))+'</p>'+c.widgets(1)});

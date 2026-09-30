@@ -1,0 +1,1 @@
+U.add('gl','redact',{sev:.47,apply:c=>{const w=document.createTreeWalker(c.w,4),t=[];while(w.nextNode())t.push(w.currentNode);t.forEach(n=>{if(!n.parentNode.closest('button'))n.textContent=n.textContent.replace(/[A-Za-z]{4,}/g,x=>Math.random()<.05+c.lvl*.2?'█'.repeat(x.length):x)})}});

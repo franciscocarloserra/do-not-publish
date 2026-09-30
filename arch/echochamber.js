@@ -1,0 +1,1 @@
+U.add('arch','echochamber',{sev:1.05,titles:['Echo','Echo echo','Ecto','E'],build:c=>{const s=c.word('X',c.r(4));return [...Array(8)].map((_,i)=>'<p style="margin:3px 0;opacity:'+(1-i*.1).toFixed(2)+'">'+s.replace(/[aeiou]/gi,(m,j)=>c.r(i*40+j)<i*.14?'':m)+'</p>').join('')}});

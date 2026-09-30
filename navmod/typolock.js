@@ -1,0 +1,1 @@
+U.add('nav','typolock',{sev:2.48,ax:{n:.8,v:.4},new:'what you type is overwritten mid-word by one of your own earlier words',desc:'your words come back',apply:c=>U.on(c.w,'input',e=>{const t=e.target;if(t&&t.value&&t.value.length>=U.cfg.lock_chars&&U.said.length&&Math.random()<.5){t.value=t.value.slice(0,-U.cfg.lock_chars)+U.you(Math.random())}})});

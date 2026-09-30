@@ -1,0 +1,1 @@
+U.add('aes','rtl',{sev:1.64,ax:{v:.3},new:'bidi override: every line of text reads backwards',name:'DRAWN BACKWARDS',css:`&{background:#f2e9d0;color:#231;font:16px Georgia,serif}& .win{direction:rtl;unicode-bidi:bidi-override;border-right:6px double #231;padding-right:14px}& button,& input{direction:ltr;unicode-bidi:normal}& h1{font-size:22px}`});

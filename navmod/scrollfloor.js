@@ -1,0 +1,1 @@
+U.add('nav','scrollfloor',{sev:1.92,ax:{v:.4},new:'the exits are parked far below the fold: scroll distance becomes the obstacle',desc:'the exits are a long way down',apply:c=>{const e=c.w.querySelector('.exits');if(e)e.style.marginTop=(60+Math.min(120,c.o.k/8))+'vh'}});

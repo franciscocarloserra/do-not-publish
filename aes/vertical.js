@@ -1,0 +1,1 @@
+U.add('aes','vertical',{sev:2.06,ax:{v:.45},new:'the whole page is typeset vertically (writing-mode) and scrolls sideways',name:'VERTICAL',css:`&{background:#e9e4d8;color:#111;font:16px "MS Mincho",serif;writing-mode:vertical-rl;overflow-x:auto}& .win{max-width:none;height:84vh;margin:0 0 0 auto}& button,& input{writing-mode:horizontal-tb}& h1{font-size:28px}`});

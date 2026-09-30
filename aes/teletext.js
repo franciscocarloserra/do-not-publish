@@ -1,0 +1,1 @@
+U.add('aes','teletext',{sev:0.12,name:'CEEFAX 888',css:`&{background:#000;color:#fff;font:bold 18px "Courier New",monospace}& .win{border:0}& h1{background:#00f;color:#ff0;font-size:22px;padding:4px}& p{color:#0ff}& button{background:#f00;color:#fff;border:0;font-weight:bold}& .row:nth-child(odd){color:#0f0}& .row:nth-child(even){color:#f0f}`});

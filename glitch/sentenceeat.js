@@ -1,0 +1,1 @@
+U.add('gl','sentenceeat',{sev:2,apply:c=>{const p=c.p,i=setInterval(()=>{if(location.hash.slice(1)!=p)return clearInterval(i);const q=[...c.w.querySelectorAll('p')].filter(e=>e.textContent.trim().split(' ').length>1);if(!q.length)return clearInterval(i);const e=q[Math.floor(Math.random()*q.length)];e.textContent=e.textContent.trim().split(' ').slice(0,-1).join(' ')},1200)}});

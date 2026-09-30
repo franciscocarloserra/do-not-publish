@@ -1,0 +1,1 @@
+U.add('gl','zalgo',{sev:.9,apply:c=>{const z=[...'̶̷̸͓͔̀́̂̃̄̅̆̇̈̊̋̌͆͊͜'];c.w.querySelectorAll('h1,p,button').forEach(e=>{if(Math.random()<.4+c.lvl*.5)e.textContent=[...e.textContent].map(ch=>ch+(Math.random()<.2+c.lvl*.4?z[Math.floor(Math.random()*z.length)].repeat(1+Math.floor(c.lvl*4)):'')).join('')})}});

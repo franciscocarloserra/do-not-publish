@@ -1,0 +1,1 @@
+U.add('aes','tokenfog',{sev:1.25,name:'TOKEN FOG',css:`&{background:#0a0a0a;color:#9a9;font:12px monospace}& .win{border:1px dashed #333;padding:10px}& *{letter-spacing:.3em;word-spacing:1em}& p,& .row{border-right:1px dashed #444;border-bottom:1px dotted #333}& button{background:#111;color:#9a9;border:1px dashed #9a9}`});

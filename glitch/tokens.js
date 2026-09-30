@@ -1,0 +1,1 @@
+U.add('gl','tokens',{sev:.54,apply:c=>{const w=document.createTreeWalker(c.w,4),t=[];while(w.nextNode())t.push(w.currentNode);t.forEach(n=>{if(Math.random()<.3+c.lvl*.5)n.textContent=n.textContent.replace(/ (?=\S)/g,' ▁').replace(/([A-Za-z]{3})(?=[A-Za-z])/g,(x)=>Math.random()<.5?x+'|':x)})}});

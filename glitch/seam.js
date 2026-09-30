@@ -1,0 +1,1 @@
+U.add('gl','seam',{sev:1.92,ax:{v:.4},new:'the page is cut by a horizontal seam: the lower half is shifted sideways',apply:c=>{const k=[...c.w.children],m=Math.ceil(k.length/2),d=(c.r(331)<.5?-1:1)*(18+c.lvl*26);k.forEach((e,i)=>{if(i>=m&&!e.classList.contains('exits'))e.style.transform=`translateX(${d}px)`;if(i==m)e.style.borderTop='2px dashed'})}});

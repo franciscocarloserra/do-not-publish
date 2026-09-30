@@ -1,0 +1,1 @@
+U.add('gl','swallow',{sev:2.62,ax:{v:.65},new:'the page is eaten from its edges by an animated clip-path over a minute',apply:c=>{c.w.style.transition=`clip-path ${U.cfg.swallow_s}s linear`;c.w.style.clipPath='inset(0 0 0 0)';setTimeout(()=>c.w.style.clipPath='inset(22% 18% 30% 18% round 30%)',80)}});

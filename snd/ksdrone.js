@@ -1,0 +1,1 @@
+U.add('snd','ksdrone',{sev:1.08,ax:{a:.1},new:'Karplus-Strong plucked strings: a noise burst through a filtered feedback delay',play:(a,o,r)=>{const R=U.au.rig(a),b=82+r(300)*40,p=()=>U.au.pluck(a,o,U.au.hz(b,Math.floor(Math.random()*6)),.35);p();R.iv(()=>{if(Math.random()<.8)p()},2500+r(301)*3000);return R.stop}});

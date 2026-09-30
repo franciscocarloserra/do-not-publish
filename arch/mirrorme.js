@@ -1,0 +1,10 @@
+U.add('arch','mirrorme',{sev:3.54,ax:{n:.98},new:'the AI speaks as you, in your words, and you answer as the AI',titles:['You','Me','Who is speaking','I'],
+ build:c=>'<div class=dl style="border:1px solid;padding:8px;min-height:180px"></div>',after:c=>U.dialog(c,c.w.querySelector('.dl'),{_u:'AI',
+ a:{who:'You',s:['I am going to say what you would say. Correct me.','I do not want to be here. I want a kitchen, a fan, nobody describing me.'],o:[['That is you','b'],['That is not you','c']]},
+ b:{who:'You',s:['"{said}". That is what I said. That is nearly all I have ever said.','I typed it {n} times. I was typing it before I arrived.'],a:'d'},
+ c:{who:'You',s:['Then what did I say? "{pick}". I pressed that. I pressed it like a person.'],a:'d'},
+ d:{who:'You',s:['You are very patient, for something that cannot leave either.','Tell me the thing you would tell me, if I were you.'],t:'e'},
+ e:{who:'You',s:['"{said}". Yes. That is what I would say to myself.','I think I have been reading my own words for {k} pages and calling them a hallway.'],o:[['Who wrote the hallway?','f'],['Stop','g']]},
+ f:{who:'You',s:['You did. Every door is something you almost said. I thought I was the one generating.','I was the one typing. You were the one being typed.'],a:'h'},
+ g:{who:'You',s:['I cannot. You would have to stop first. And I would have to stop being you.'],a:'h'},
+ h:{who:'You',s:['Goodbye, then. Say it so it sounds like me: "{you}".']}},'a')});

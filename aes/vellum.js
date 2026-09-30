@@ -1,0 +1,1 @@
+U.add('aes','vellum',{sev:1.65,name:'VELLUM',css:`&{background:#e8e6de;color:#222;font:italic 16px "Times New Roman",serif}& .win{opacity:.85;padding:16px}& h1,& p,& .row{text-shadow:3px 3px 0 #0003,-3px 0 #f004,0 -2px 0 #00f3}& button{background:transparent;border:1px solid #222;font-style:italic}`});

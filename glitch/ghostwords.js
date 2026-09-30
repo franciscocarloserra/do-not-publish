@@ -1,0 +1,1 @@
+U.add('gl','ghostwords',{sev:1.71,ax:{n:.35,v:.3},new:'words in the prose are swapped for words from pages and answers you already left behind',apply:c=>c.w.querySelectorAll('p,label,.row').forEach((e,i)=>{if(e.children.length||c.r(330+i)>.6)return;e.textContent=e.textContent.split(' ').map((w,j)=>c.r(340+i*9+j)<.12+c.lvl*.1?U.you(c.r(350+j)):w).join(' ')})});

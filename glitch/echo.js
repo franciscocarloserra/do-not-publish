@@ -1,0 +1,1 @@
+U.add('gl','echo',{sev:.6,apply:c=>{const e=c.w.cloneNode(true);e.removeAttribute('id');e.querySelectorAll('[id]').forEach(x=>x.removeAttribute('id'));Object.assign(e.style,{position:'absolute',left:0,right:0,top:(8+c.lvl*40)+'px',opacity:.15+c.lvl*.2,pointerEvents:'none',margin:'0 auto'});c.w.parentNode.insertBefore(e,c.w)}});

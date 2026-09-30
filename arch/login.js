@@ -1,0 +1,1 @@
+U.add('arch','login',{sev:0,titles:["Your account has been signed in elsewhere (here)",'Sign in to sign out','Log in as someone else','Welcome back, stranger','Forgot your username? Forgot your forgetting?'],build:c=>c.word('L',c.r(4))+': <input><br><br>Password: <input type=password value="'+'x'.repeat(3+Math.floor(c.r(5)*20))+'"><p><small>'+c.word('X',c.r(6))+'</small></p>'});

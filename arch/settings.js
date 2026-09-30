@@ -1,0 +1,1 @@
+U.add('arch','settings',{sev:0,titles:["Restore defaults (defaults not found)",'Settings (Advanced) (Basic)','Preferences you did not prefer','Options → More Options → Options','Control Panel of Control Panels'],build:c=>'<fieldset><legend>'+c.word('L',c.r(4))+'</legend>'+c.widgets(3)+'</fieldset><fieldset><legend>'+c.word('L',c.r(5))+'</legend>'+c.widgets(2,40)+'</fieldset>'});

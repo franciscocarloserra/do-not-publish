@@ -1,0 +1,1 @@
+U.add('aes','cor_cga',{sev:1.6,name:"CGA",ax:{v:0.33,c:0.15},new:"four-colour CGA palette: black, cyan, magenta, white only",css:`&{background:#000;color:#0ff;font:16px "Courier New",monospace}& .win{background:#000;border:4px double #f0f;padding:10px}& h1{color:#000;background:#f0f;padding:2px 6px}& button{background:#000;color:#fff;border:2px solid #0ff}`});

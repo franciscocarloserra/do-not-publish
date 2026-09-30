@@ -1,0 +1,1 @@
+U.add('gl','prob',{sev:.68,apply:c=>{const w=document.createTreeWalker(c.w,4),t=[];while(w.nextNode())t.push(w.currentNode);t.forEach(n=>n.textContent=n.textContent.replace(/[A-Za-z]{3,}/g,x=>Math.random()<.03+c.lvl*.08?x+' (p='+Math.random().toFixed(2)+')':x))}});

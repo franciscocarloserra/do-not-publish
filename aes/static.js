@@ -1,0 +1,1 @@
+U.add('aes','static',{sev:1.8,name:'STATIC',css:`@keyframes lmstatic{to{background-position:0 40px}}&{background:repeating-linear-gradient(0deg,#111 0 2px,#262626 2px 4px);animation:lmstatic 3s steps(10) infinite;color:#ddd;font:14px "Courier New",monospace}& .win{background:#000c;padding:14px;border:1px solid #555}& button{background:#000;color:#ddd;border:1px solid #888}`});

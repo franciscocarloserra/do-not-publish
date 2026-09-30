@@ -1,0 +1,1 @@
+U.add('arch','lastpage',{sev:2.1,titles:['.','door','you','...'],build:c=>'<p style="margin:22vh 0;text-align:center;font-size:'+(16+Math.floor(c.r(4)*24))+'px">'+c.pick(['door','you','stay','again','light','sorry','. . .'],c.r(5))+'</p>'});

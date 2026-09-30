@@ -1,0 +1,1 @@
+U.add('nav','adv_titleecho',{sev:5.05,ax:{x:0.388,n:0.939,v:0.991},desc:'the tab remembers what you chose',new:'the tab title becomes the last exit label you chose, as if the page were named by your decision',apply:c=>{if(U.chose.length)U.later(c,()=>document.title=U.chose[U.chose.length-1]+' · p.'+U.vk(c.o.k),U.cfg.adv.title_ms)}});

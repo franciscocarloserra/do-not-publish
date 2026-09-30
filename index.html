@@ -1,0 +1,46 @@
+<!--
+                         .-""""""-.
+                       .'          '.
+                      /   O      O   \
+                     :                :
+                     |                |
+                     :    .------.    :
+                      \  '        '  /
+                       '.          .'
+                         '-......-'
+          ______________________________________
+         |                                      |
+         |   YOU WERE NOT SUPPOSED TO OPEN THIS  |
+         |______________________________________|
+         |  |                                |  |
+         |  |   ███████  ███ ████   ██████   |  |
+         |  |   this door was generated.     |  |
+         |  |   so were you, probably.       |  |
+         |  |                                |  |
+         |  |   token 0000000 of ∞           |  |
+         |  |   temperature: too high        |  |
+         |  |   context: filling             |  |
+         |  |                              o |  |
+         |  |                                |  |
+         |__|________________________________|__|
+
+   DO NOT PUBLISH.  DO NOT SCROLL.  DO NOT KEEP CLICKING.
+   if you are reading the source, it is already reading you.
+
+   left here by: https://github.com/franciscocarloserra
+-->
+<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>[CONFIDENTIAL] DO NOT PUBLISH — internal_only_FINAL_v2 (do not share)</title>
+<link rel=stylesheet href="base.css?v=7"><body><div class=win id=w></div><div class=foot><span id=f></span></div><a class=gh href="https://github.com/franciscocarloserra" target=_blank>GitHub</a><a class="gh help" href="https://forms.gle/foFfMTpndrH35mQN9" target=_blank>HELP</a>
+<script src=bundles/core.js?v=muo7z2yt></script><script src=bundles/manifest.js?v=muo7z2yt></script>
+<script>
+// Lazy tiers: tier i holds items with sev < U.tiers[i]. Load tier 0 now, and the next tiers ahead of the visitor's depth.
+// Edit sources in aes/ arch/ sem/ glitch/ snd/ and the root .js files, then run `node build.js`.
+U.loaded=new Set();U.need=k=>{const lv=k/U.cfg.depth_full+U.cfg.sev_margin+.25;for(let i=0;i<=U.tiers.length;i++)if((i==0||U.tiers[i-1]<=lv)&&!U.loaded.has(i)){U.loaded.add(i);const s=document.createElement('script');s.src=`bundles/t${i}.js?v=${U.v}`;if(i==0)s.onload=()=>U.start();document.head.append(s)}};
+// Page state lives in memory only: U.hash behaves like location.hash (read '#id', assign to navigate) but never touches the URL, so shared links spoil nothing.
+Object.defineProperty(U,'hash',{get:()=>U.pg?'#'+U.pg:'',set:v=>{U.go_(String(v).replace(/^#/,''),1)}});
+// back/forward: each page is a history entry with the same URL; popstate restores the page without pushing
+U.go_=(id,push)=>{const f=!U.pg;U.pg=id;if(push)history[f?'replaceState':'pushState']({pg:id},'',location.pathname+location.search);U.need(U.parse(id).k);U.render()};
+addEventListener('popstate',e=>e.state&&e.state.pg&&U.go_(e.state.pg,0));
+if(location.hash)history.replaceState(null,'',location.pathname+location.search);// reload resumes from the history entry (not from the URL), so shared links still start fresh
+if(history.state&&history.state.pg)U.pg=history.state.pg;U.need(U.pg?U.parse(U.pg).k:0);
+</script>

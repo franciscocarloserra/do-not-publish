@@ -1,0 +1,2 @@
+U.add('snd','adv_hum60',{sev:4.81,ax:{x:0.327,a:0.99},new:'transformer hum: 60, 120 and 180 Hz sines whose pitch drifts a few cents on a very slow oscillator',play:(a,o,r)=>{const R=U.au.rig(a),Q=U.cfg.adv,lf=R.osc('sine',Q.hum_lfo),lg=a.createGain();lg.gain.value=Q.hum_cents;lf.start();
+ [[60,1],[120,.6],[180,.35]].forEach(([f,m])=>{const s=R.osc('sine',f),g=a.createGain();g.gain.value=Q.hum_gain*m;lf.connect(lg).connect(s.detune);s.connect(g).connect(o);s.start()});return()=>R.stop()}});

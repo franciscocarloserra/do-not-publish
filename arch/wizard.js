@@ -1,0 +1,1 @@
+U.add('arch','wizard',{sev:0.05,titles:["Step 47 of 47 of 47",'Welcome to the Setup Uninstaller','Almost there (estimated: ∞)','Choose your destination destination','Installing the installer'],build:c=>{const n=3+Math.floor(c.r(4)*9),s=Math.floor(c.r(5)*n*2);return '<p><b>Step '+s+' of '+n+'</b></p><p>'+c.word('X',c.r(6))+'</p>'+c.widgets(2)}});

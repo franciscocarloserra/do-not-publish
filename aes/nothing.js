@@ -1,0 +1,1 @@
+U.add('aes','nothing',{sev:3.6,ax:{v:1},new:'all author styles are reverted: the browser shows its own default rendering, the frame with no skin',name:'NOTHING',css:`html:has(&){background:#fff}&{background:#fff;color:#000}& .win,& .win *{all:revert}`});

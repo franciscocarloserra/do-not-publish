@@ -1,0 +1,1 @@
+U.add('aes','cor_cssfail',{sev:1,name:"CSSFAIL",ax:{v:0.1,c:0},new:"the stylesheet fails to load: browser-default serif page with grey UA buttons",css:`&{background:#fff;color:#000;font:16px "Times New Roman",serif}& .win{background:none}& button{all:revert}`});

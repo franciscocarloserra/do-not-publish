@@ -1,0 +1,1 @@
+U.add('gl','stutter',{sev:.4,apply:c=>{const w=document.createTreeWalker(c.w,4),t=[];while(w.nextNode())t.push(w.currentNode);t.forEach(n=>n.textContent=n.textContent.replace(/\b[A-Za-z]{2,}\b/g,x=>Math.random()<.04+c.lvl*.12?x+' '+x:x))}});

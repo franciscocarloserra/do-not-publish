@@ -1,0 +1,1 @@
+U.add('gl','loop',{sev:.82,apply:c=>{const p=[...c.w.querySelectorAll('p')].pop()||c.w.querySelector('h1'),x=c.w.querySelector('.exits');if(!p||!x)return;for(let i=1;i<3+c.lvl*6;i++){const e=document.createElement('p');e.textContent=p.textContent.split(' ').filter((_,j)=>c.r(300+i*20+j)>i*.08).join(' ');e.style.opacity=(1-i*.1).toFixed(2);x.before(e)}}});

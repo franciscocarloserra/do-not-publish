@@ -1,0 +1,1 @@
+U.add('arch','tokenbudget',{sev:1.85,titles:['Context remaining','Token budget','Tokens left','Low'],build:c=>{const n=Math.max(0,1000-(c.o.k-200)*3);return '<p>Context remaining: '+n+' tokens</p><meter min=0 max=1000 value='+n+' low=200 style="width:100%"></meter><p>'+c.word('X',c.r(4)).split(' ').slice(0,Math.max(1,Math.floor(n/60))).join(' ')+'</p>'}});

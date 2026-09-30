@@ -1,0 +1,1 @@
+U.add('snd','ghostchord',{sev:1.15,play:(a,o,r)=>{const b=110+r(300)*60,v=[1,1.5,2.003].map(m=>{const x=a.createOscillator(),g=a.createGain();x.type='sine';x.frequency.value=b*m;x.frequency.exponentialRampToValueAtTime(b*m*.5,a.currentTime+120);g.gain.value=.06;x.connect(g).connect(o);x.start();return x});return()=>v.forEach(x=>x.stop())}});

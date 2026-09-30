@@ -1,0 +1,1 @@
+U.add('sem','afterlife',{sev:2.45,words:{B:['<eos>','...','Rest','Thank you'],L:['Nothing','Light','Off'],X:['Nothing is being generated.','The light is off.','You may leave the room.','<eos>','. . .'],E:['·']},titles:['<eos>','(end)','...'],mutate:(t,r)=>r<.4?t.replace(/[aeiou]/gi,m=>r<.2?'':m):t});
